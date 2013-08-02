@@ -991,7 +991,8 @@ margin: .5em;
 
 .social {
   padding: 1.5em;
-  text-align: center; }
+  xtext-align: center; 
+ margin-left: 2.5em;}
   .site_header .social {
     display: none; }
   .social ul, .social li {
