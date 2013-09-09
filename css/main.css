@@ -572,8 +572,10 @@ html[xmlns] .clearfix, html[xmlns] .mobile_nav, html[xmlns] .section, html[xmlns
 /* ---------- SITE STYLES --------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 body {
-  background: #242525 url(../img/star_1.jpg) top center;
-  background: #242525 url(../img/gray-bg.png) 50% 0;
+ // background: #242525 url(../img/star_1.jpg) top center;
+//  background: #242525 url(../img/gray-bg.png) 50% 0;
+background: #242525;
+
   font-size: 112.5%;
   line-height: 1.5;
   font-family: "Nexa", "Helvetica Neue", Helvetica, Arial, Sans-serif;
@@ -617,7 +619,6 @@ a {
   border-right: 1px dotted rgba(229, 0, 210, 0.3); }
   .nav li {
     background: rgba(229, 0, 210, 0.1);
-    background: url(../img/arrow-bg-1.png) 50% 0;
     padding: 0;
     margin: 0;
     list-style: 0;
@@ -1165,7 +1166,6 @@ margin: .5em;
 
   .section.intro {
     background: rgba(229, 0, 210, 0.2);
-    background: url(../img/arrow-bg-1.png) 50% 0, url(../img/arrow-bg-2.png) 50% 0, url(../img/arrow-bg-3.png) 30% 0, rgba(229, 0, 210, 0.2);
     padding-top: 40px;
     padding-bottom: 40px;
     /*& > div > h2{
