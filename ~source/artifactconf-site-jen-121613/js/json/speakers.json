@@ -1,0 +1,7 @@
+var data = {
+		"speakers" : [
+		{	"firstName": "Christophe",
+			"lastName": "Coenraets"},
+		{	"firstName": "John",
+			"lastName": "Smith"}
+		]};
