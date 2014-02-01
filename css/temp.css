@@ -1,0 +1,1010 @@
+@charset "UTF-8";
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0; }
+
+/*
+ * Define consistent border, margin, and padding.
+ 
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+  */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+
+@font-face {
+  font-family: 'Nexa';
+  src: url("fonts/nexa-bold-italic.eot");
+  src: url("fonts/nexa-bold-italic.eot?#iefix") format("embedded-opentype"), url("fonts/nexa-bold-italic.woff") format("woff"), url("fonts/nexa-bold-italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url("fonts/nexa-bold.eot");
+  src: url("fonts/nexa-bold.eot?#iefix") format("embedded-opentype"), url("fonts/nexa-bold.woff") format("woff"), url("fonts/nexa-bold.ttf") format("truetype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url("fonts/nexa-book-italic.eot");
+  src: url("fonts/nexa-book-italic.eot?#iefix") format("embedded-opentype"), url("fonts/nexa-book-italic.woff") format("woff"), url("fonts/nexa-book-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url("fonts/nexa-book.eot");
+  src: url("fonts/nexa-book.eot?#iefix") format("embedded-opentype"), url("fonts/nexa-book.woff") format("woff"), url("fonts/nexa-book.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url("fonts/nexa-thin.eot");
+  src: url("fonts/nexa-thin.eot?#iefix") format("embedded-opentype"), url("fonts/nexa-thin.woff") format("woff"), url("fonts/nexa-thin.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url("fonts/nexa-thin-italic.eot");
+  src: url("fonts/nexa-thin-italic.eot?#iefix") format("embedded-opentype"), url("fonts/nexa-thin-italic.woff") format("woff"), url("fonts/nexa-thin-italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+/* -------------------------------------------------------------------------- */
+/* ---------- SITE STYLES --------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+body {
+  margin: 0;
+  font-size: 112.5%;
+  line-height: 1.5;
+  font-family: "Nexa", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-weight: normal;
+  color: white; 
+  background: #000;}
+
+input, textarea, button {
+  font-family: "Nexa", "Helvetica Neue", Helvetica, Arial, Sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+a {
+  color: #e500d2;
+  text-decoration: none;
+  font-weight: 700; }
+  a:hover {
+    color: #ff7ff4; }
+	
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+#header, #register, #speakers, #about, #keepintouch, #footer, #wrapup, #program, #sponsors, #content {
+	margin: 0px;
+	padding: 1.5em 1em;
+}
+
+p.intro {
+	font-size: .9em;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+h2.section-header {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center; 
+  letter-spacing: 1px;
+  }
+
+h3.contentpage {	
+	font-size: .9em;
+	line-height: 1.1;
+	font-weight: normal;
+	text-transform: uppercase;
+    margin-top: 2em;
+	padding-bottom: .25em;
+	margin-bottom: 1em;
+	border-bottom: solid 1px #fff;
+}
+h4 {
+	margin-top: .5em;
+}
+
+#content h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 2em;
+}
+
+/* ===============  HEADER SECTION  ===================== */
+#header {
+	padding-top: 180px;
+	padding-bottom: 10px;
+	background-color: #222;
+	background-image:url(../img-temp/artifact_header_logotype.png);
+	background-position: center 30px;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+}
+#header h1 {
+	display: none;
+}
+#header p {
+	font-size: 1em;
+	font-weight: 500;
+	text-align:center;
+}
+
+
+/* ========   EVENT REGISTRATION SECTION ============== */
+
+#register {
+	background: #a41681; 
+}
+.eventcontent {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.launchtime {
+	font-size: 70%;
+	opacity: .6;
+}
+.eventcontent .eventlisting {
+	display: inline-block;
+	width: 230px;
+	background-color: #fff;
+	color: #000;
+	padding: 1em;
+	text-align: center;
+	margin-bottom: 1em;
+	border-radius: 0px 40px 0px 40px;
+    -moz-border-radius: 0px 40px 0px 40px;
+    -webkit-border-radius: 0px 40px 0px 40px;
+}
+.eventcontent .eventlisting h4 {
+	font-size: 1.4em;
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.eventcontent .eventlisting p {
+  font-weight: normal;
+  line-height: 1;
+  padding: 0 5%;
+}
+.eventcontent p.dates {
+	font-weight: bold;
+	margin-top: 0;
+	font-size: 1.1em;
+	color: #939;
+	color: #000;
+}
+.eventlisting p.buy {
+	margin: 1.5em auto;
+	padding: 0;
+}
+
+.eventlisting a.reg {
+	display: block;
+	padding: 19px 14px;
+	width: 200px;
+	height: 40px;
+	font-size: 24px;
+	line-height: 1;
+	background: #62b600;
+	color: white;
+	text-align: center;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius:40px;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+.eventlisting a.reg:hover {
+	background: #9C0;
+}
+span.regcity {
+	font-size: 18px;
+}
+.eventlisting .hotel1 {
+	margin-bottom: 0;
+}
+.eventlisting .hotel2 {
+	margin-top: .5em;
+}
+.eventlisting .reserve {
+	text-transform: uppercase;
+	font-size: 75%;
+	font-weight: 600;
+}
+/* end EVENT REGISTRATION SECTION */
+
+
+/* ================ SPEAKER SECTION ================== */
+
+#speakers {
+	background-color: #000;
+	text-align: center;
+	padding-bottom: 2em;
+}
+#speakers ul li {
+	width: 200px;
+	/* height: 20em;
+	overflow: auto; */
+	background-color: #333;
+    border-radius: 0px 20px 0px 20px;
+    -moz-border-radius: 0px 20px 0px 20px;
+    -webkit-border-radius: 0px 20px 0px 20px;
+	display: inline-block;
+	font-size: .9em;
+	line-height: 1.2;
+	margin: 1em;
+	padding: 20px;
+	text-align: left;
+	vertical-align: top;
+}
+#speakers ul li img {
+	width: 200px;
+	height: 200px;
+	background: #906;
+	border-radius: 0px 120px 0px 0px;
+    -moz-border-radius: 0px 12px 0px 0px;
+    -webkit-border-radius: 0px 12px 0px 0px;
+	margin-bottom: 1em;
+}
+#speakers .speakername {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+#speakers .sessiontitle {
+	color: #aaa;
+}
+
+#speakers li.keynote {
+	background-color: #666;
+}
+
+/*
+#speakers ul.keynotes li {
+	width: 200px;
+	margin-top: 1em;
+	margin-left: 0;
+}
+#speakers ul.keynotes li img.key {
+	width: 200px;
+	height: 100px
+}
+*/
+
+
+/* end SPEAKER SECTION */
+
+/* ================= ABOUT SECTION ======================= */
+
+#about {
+	background-color: #333;
+}
+#about p {
+	padding: 0 5%;
+}
+#about p.topics {
+	text-transform: uppercase;
+	color: #F9C;
+}
+#about p.topics .bullet {
+	color: white;
+}
+#about .pastwrapper {
+	text-align: center;
+}
+#about h3 {
+	text-transform: uppercase;
+	/* width: 20em; */
+	text-align: center;
+	margin: 1.5em auto .5em;
+	background: #C09;
+	letter-spacing: 1px;
+}
+#about ul li {
+	display: inline-block;
+	margin: 1em 0;
+}
+#about ul li img {
+	max-width: 100%;
+	margin: 0 0 .5em;
+	border-radius: 0px 20px 0px 20px;
+    -moz-border-radius: 0px 20px 0px 20px;
+    -webkit-border-radius: 0px 20px 0px 20px;
+}
+#about .quotes {
+	padding: 0;
+	margin-top: 2em;
+}
+#about .quotes p {
+	font-size: .9em;
+	line-height: 1.4;
+	padding: 1em 0;
+	border-top: 1px dotted #CC0099;
+	margin: 0;
+}
+#about .quotes .source {
+	color: #999;
+	font-size: .9em;
+}
+/* end ABOUT SECTION  */
+
+
+/* =================  KEEP IN TOUCH ====================== */
+
+#keepintouch {
+	background: #666;
+	text-align: center;
+}
+
+.signupform form label {
+  display: none; }
+  .no-placeholder .signupform form label {
+    width: auto;
+    margin: 0 auto;
+    display: block; }
+.signupform form input, .signupform form button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+.signupform form input {
+  font-size: 1em;
+  display: inline-block;
+  padding: 1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: none;
+  width: 100%; }
+.signupform form .button {
+  display: block;
+  background: #e500d2;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 1em;
+  margin: 0.75em 0 0 0;
+  width: 100%; }
+  .signupform form .button:hover {
+    background: rgba(229, 0, 210, 0.75); }
+
+.social {
+  padding-top: 1.5em;
+  text-align: center; }
+  .site_header .social {
+    display: none; }
+  .social ul, .social li {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+	display: block;}
+  .social a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 1.75em 1.75em 0;
+    font-size: .875em; }
+    .social a:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 8px 3px 0;
+      width: 20px;
+      height: 20px; }
+    .social a:hover {
+      opacity: .75; }
+    .social a.social-twitter:before {
+      background: url(../img-temp/social/twitter-icon.svg);
+      -webkit-background-size: 100%;
+      background-size: 100%; }
+    .social a.social-facebook:before {
+      background: url(../img-temp/social/facebook-icon.svg);
+      -webkit-background-size: 100%;
+      background-size: 100%; }
+    .social a.social-lanyrd:before {
+      background: url(../img-temp/social/lanyrd-icon.svg);
+      -webkit-background-size: 100%;
+      background-size: 100%; }
+    .no-svg .social a.social-twitter:before {
+      background: url(../img-temp/social/twitter-icon.png);
+      -webkit-background-size: 100%;
+      background-size: 100%; }
+    .no-svg .social a.social-facebook:before {
+      background: url(../img-temp/social/facebook-icon.png);
+      -webkit-background-size: 100%;
+      background-size: 100%; }
+    .no-svg .social a.social-lanyrd:before {
+      background: url(../img-temp/social/lanyrd-icon.png);
+      -webkit-background-size: 100%;
+      background-size: 100%; }
+/* end KEEP IN TOUCH */
+
+
+/* ========================== FOOTER =========================  */
+
+#footer {
+	background-color: #000;
+	font-size: 85%;
+	color: #ccc;
+	padding-bottom: 100px;
+	text-align: center;
+}
+#footer ul.links {
+	text-transform: uppercase;
+}
+#footer ul li {
+	display: block;
+	margin-top: 1.5em;
+	font-weight: 500;
+}
+
+/* ============================================================
+=================== SECONDARY PAGE STYLES =====================
+=============================================================== */
+
+/* ============== SECONDARY PAGE HEADER  =============== */
+
+#header2 {
+	background-color: #222;
+    padding: 0;
+	position: relative;
+	height: 170px;
+}
+h1 {
+	width: 280px;
+	height: 146px;
+	background-image:url(../img-temp/artifact_header_logotype.png);
+	background-repeat: no-repeat;
+	background-position: 0 10px;
+	text-indent: -999em;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.homelink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .4;
+}
+
+
+/* ==================== WRAP UP ============================ */
+#wrapup {
+	background: #444;
+}
+#wrapup p.intro {
+	font-size: .9em;
+}
+#flickrgroup, #closingparty {
+	text-align: center;
+	margin-bottom: 1em;
+}
+#photos ul li {
+	margin-top: .5em;
+	margin-right: .5em;
+}
+ul.articles li, ul.morephotos li {
+	display: block;
+}
+
+/* ======================== PROGRAM ========================= */
+#program {
+	background : #222;
+}
+#program h3 {
+	margin-top: 0;
+}
+.program-item {
+  border-top: dotted 1px rgba(229, 0, 210, 0.25);
+  padding: 1.5em 0; }
+  .program-item h3 {
+    font-size: 1.25em;
+    margin: 0;
+    line-height: 1.6; }
+    .program-item h3 a {
+      color: #fff;
+      border-bottom: dotted 1px rgba(255, 255, 255, 0.1); }
+      .program-item h3 a:hover {
+        color: #e500d2; }
+    .program-item h3 span {
+      font-size: .5em;
+      margin: 0.5em 0.75em 0 0;
+      vertical-align: top;
+      color: #fff;
+      display: inline-block;
+      padding: 0.2em 0.75em;
+      text-transform: uppercase;
+      font-weight: 700;
+      background: rgba(229, 0, 210, 0.5); }
+  .program-item .program-speaker span {
+    font-size: .9375em; }
+  .program-item .program-speaker .program-speaker-name {
+    font-weight: 700;
+    color: #e500d2;
+    text-transform: uppercase; }
+  .program-item .program-description {
+    display: none;
+    padding: 1.5em;
+    margin: 0.75em 0;
+    background: rgba(229, 0, 210, 0.15);
+    font-size: .875em; }
+    .program-item .program-description.active {
+      display: block; }
+  .program-item footer {
+    text-align: right; }
+    .program-item footer a {
+      display: inline-block;
+      background: rgba(229, 0, 210, 0.2);
+      padding: 0.15em 0.75em; }
+  .program-item:target .program-description {
+    display: block; }
+/* ================== SPONSORS ======================== */
+#sponsors {
+	background: #222;
+}
+#sponsors h3 {
+	margin-top: 0;
+}
+#sponsors ul {
+	margin-top: 1em;
+}
+#sponsors ul li {
+	margin-right: 1em;
+}
+
+#content {
+	background: #eee;
+	color: #000;
+}
+
+/* ================== MEDIA QUERIES  ========================== */
+
+@media only screen and (min-width: 481px) {
+  body {
+    font-size: 100%; }
+	
+  #header, #register, #speakers, #about, #keepintouch, #footer, #wrapup, #program, #sponsors, #content {
+	margin: 0px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+}
+
+
+h2.section-header {
+  font-size: 2.25em;
+  }
+#header {
+	padding-top: 180px;
+	padding-bottom: 10px;
+	background-color: #222;
+	background-image:url(../img-temp/artifact_header_logotype.png);
+	background-position: center 25px;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+}
+#header p {
+	font-size: 1.2em;
+	padding: 0 5%;
+}
+
+.eventcontent .eventlisting {
+	margin: 0 1em 1em;
+}
+
+
+#register p.intro, #speakers p.intro, #about p.intro, #wrapup p.intro {
+	padding: 0;
+	font-size: 1.2em;
+}
+
+#speakers ul.keynotes li {
+	width: 400px;
+	height: 21em;
+	overflow: auto;
+}
+#speakers ul.keynotes li img.key {
+	width: 400px;
+	height: 200px;
+}
+#speakers ul li {
+	height: 21em;
+	overflow: auto;
+	font-size: .9em;
+	vertical-align: top:
+}
+
+#about h3 {
+	width: 20em;
+}
+#about ul li {
+	display: inline-block;
+	margin: 1em .5em;
+}
+#about ul li img {
+	width: 400px;
+	height: 200px;
+}
+#about .quotes {
+	padding: 0;
+	margin-top: 2em;
+}
+#about .quotes p {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.4;
+	padding: 1em 5%;
+	border-top: 1px dotted #CC0099;
+	margin: 0;
+}
+.social {
+	clear: both;
+	margin-top: 1.5em;
+}
+.social ul li {
+	display: inline-block;
+	
+}
+#footer ul li {
+	display: inline-block;
+	margin-right: 1.5em;
+	margin-top: 0;
+	font-weight: 500;
+}
+#keepintouch {
+	padding: 2em 20% 1em;
+}
+.signupform form {
+    background: red;
+    width: 100%;
+    display: block; }
+    .signupform form .mc-field-group {
+      float: left;
+      width: 60%; }
+    .signupform form .button {
+      float: left;
+      width: 37%;
+      margin: 0 0 0 3%; } 
+	  
+h3.contentpage {	
+	font-size: 1.5em;
+	font-weight: 700;
+}
+}
+
+@media only screen and (min-width: 769px) {
+
+h2.section-header {
+  font-size: 2.5em;
+  }
+#header {
+	padding-top: 200px;
+	padding-bottom: 10px;
+	background-color: #222;
+	background-image:url(../img-temp/artifact_header_logo.png);
+	background-position: center -240px;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+}
+
+#wrapup, #program, #sponsors, #content {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+}
